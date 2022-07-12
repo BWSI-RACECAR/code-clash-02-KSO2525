@@ -38,7 +38,7 @@ class Solution:
             for x in range(len(ary)):
                 if i != x:
                     if (ary[i] + ary[x]) == target:
-                        return [ary[i], ary[x]]
+                        return [i, x]
         return False
 def main():
     array = input().split(" ")
