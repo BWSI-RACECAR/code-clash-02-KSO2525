@@ -39,8 +39,6 @@ class Solution:
                 if ary[i] != ary[x]:
                     if ary[i] + ary[x] == target:
                         return [ary[i], ary[x]]
-                else:
-                    return False
         return False
 def main():
     array = input().split(" ")
