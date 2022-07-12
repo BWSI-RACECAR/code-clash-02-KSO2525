@@ -36,8 +36,8 @@ class Solution:
        # TODO: Write code below to return a list with the solution to the prompt
         for i in range(len(ary)):
             for x in range(len(ary)):
-                if ary[i] != ary[x]:
-                    if ary[i] + ary[x] == target:
+                if i != x:
+                    if (ary[i] + ary[x]) == target:
                         return [ary[i], ary[x]]
         return False
 def main():
